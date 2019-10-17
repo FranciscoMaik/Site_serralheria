@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="menu">
+      <h1 id="menuleft"><a href="/">SITE</a></h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/galeria">Galeria</a></li>
+        <li><a href="/faleConosco">Fale Conosco</a></li>
+      </ul>
+    </div>
+    {% block body %}{% endblock %}
+
+    <footer ><img src="images/1086.jpg" alt="instagram" height = '40px' width = '150px'><br><a href="https://www.instagram.com/f_maik_fonseca/">@f_maik_fonseca</a></footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fffafa;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#menu{
+  color: #ffffff;
+  background-color:#323232;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: right;
+}
+
+#menu ul li{
+  list-style: none;
+  font-size: 20px;
+  display: inline;
+  margin-left: 20px;
+}
+
+#menu ul li a{
+  text-decoration: none;
+}
+
+#menu ul li a:link{
+  color: white;
+}
+
+#menu ul li a:visited{
+  color: inherit;
+}
+
+#menuleft{
+  text-align: left;
+  font-size: 25px;
+}
+
+#menuleft a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer{
+  margin-top: 25px;
+  padding: 25px;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #323232;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
