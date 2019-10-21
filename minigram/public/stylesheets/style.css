@@ -1,26 +1,38 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #fffafa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 a {
   color: #00B7FF;
 }
 
+html{
+  height: 100%;
+  min-height: 100%;
+}
+
 #menu{
-  color: #ffffff;
+  color: #FDD10E;
   background-color:#323232;
   border-radius: 8px;
-  padding: 25px;
+  padding: 30px;;
   text-align: right;
+}
+
+#menu ul{
+  padding: 0px;
 }
 
 #menu ul li{
   list-style: none;
   font-size: 20px;
   display: inline;
-  margin-left: 20px;
+  padding: 10px;
 }
 
 #menu ul li a{
@@ -28,34 +40,61 @@ a {
 }
 
 #menu ul li a:link{
-  color: white;
+  color: #00B7FF;
 }
 
 #menu ul li a:visited{
   color: inherit;
 }
 
-#menuleft{
-  text-align: left;
-  font-size: 25px;
+#menu ul li:hover{
+  background-color: #272727;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-#menuleft a{
-  text-decoration: none;
-  color: #ffffff;
+#telaFaleConosco{
+  margin-top: 20px;
+  position: relative;
+  padding: 30px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #ddd9ce;
+  margin: 0 auto;
 }
+
+#telaFaleConosco h1{
+  text-align: center;
+}
+
+#telaLogin{
+  margin-top: 20px;
+  position: relative;
+  padding: 30px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #ddd9ce;
+  margin: 0 auto;
+}
+
+#telaLogin h1{
+  text-align: center;
+  font-size: 30px;
+}
+
 
 footer{
-  margin-top: 25px;
+  margin-top: auto;
   padding: 25px;
   color: #ffffff;
   border-radius: 8px;
   font-size: 14px;
   background-color: #323232;
   text-align: center;
+  position:inherit;
 }
 
 footer a{
   text-decoration: none;
-  color: #ffffff;
+  color: #FDD10E;
 }

@@ -14,4 +14,16 @@ router.get('/faleConosco', function(req, res){
   res.render('faleConosco');
 });
 
+router.get('/login', function(req, res){
+  res.render('login');
+});
+
+router.get('/funcionarios', function(req, res){
+  res.render('funcionarios');
+});
+
+router.get('/diretorias', function(req, res){
+  res.render('diretorias');
+});
+
 module.exports = router;

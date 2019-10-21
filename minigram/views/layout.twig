@@ -5,16 +5,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <div id="menu">
-      <h1 id="menuleft"><a href="/">SITE</a></h1>
+    <nav id="menu">
       <ul>
+        <li id="menuleft"><a href="/">SITE</a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/galeria">Galeria</a></li>
+        <li> <a href="funcionarios">Funcionários</a> </li>
+        <li> <a href="diretorias"> Diretorias </a> </li>
         <li><a href="/faleConosco">Fale Conosco</a></li>
+        <li> <a href="login">Login</a></li>
       </ul>
-    </div>
+    </nav>
     {% block body %}{% endblock %}
 
-    <footer ><img src="images/1086.jpg" alt="instagram" height = '40px' width = '150px'><br><a href="https://www.instagram.com/f_maik_fonseca/">@f_maik_fonseca</a></footer>
+    <footer ><img src="images/1086.jpg" alt="instagram" height = '40px' width = '150px'><br><a href="https://www.instagram.com/juati.ufpi/">
+      @juati.ufpi</a></footer>
   </body>
 </html>
