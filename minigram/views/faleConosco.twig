@@ -2,15 +2,25 @@
 
 {% block body %}
 <p></p>
-<div id="telaFaleConosco">
-  <h1>Fale Conosco</h1>
-  <h2>Duvida</h2>
-  <h3>Nickname</h3>
-  <input type="text" name="nickname">
-  <h3>Email</h3>
-  <input type="email" name="email">
-  <h3>Comentário</h3>
-  <textarea name="comentario" rows="8" cols="50%"></textarea>
+<div id="telaFaleConosco" class="col-md-4">
+  <form class="form-group" action="index.html" method="post">
+    <h2 class="text-center">Fale Conosco</h2>
+    <br>
+    <label for="labelDuvida">Duvidas</label>
+    <br>
+    <label for="inputNick">Nickname</label>
+    <br>
+    <input type="text" name="nickname">
+    <br>
+    <label for="emailFaleconosco">Email</label>
+    <br>
+    <input type="email" name="email">
+    <br>
+    <label for="inputComentario">Comentários</label>
+    <br>
+    <textarea name="comentario" rows="8" cols="50%"></textarea>
+  </form>
+  
 </div>
 
 {% endblock %}
