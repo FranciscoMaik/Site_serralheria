@@ -2,11 +2,11 @@
 
 {% block body %}
 <p></p>
-<div id="telaFaleConosco" class="col-md-4">
+<div id="telaFaleConosco">
   <form class="form-group" action="index.html" method="post">
     <h2 class="text-center">Fale Conosco</h2>
     <br>
-    <label for="labelDuvida">Duvidas</label>
+    <label for="labelDuvida"> <b>Duvidas</b> </label>
     <br>
     <label for="inputNick">Nickname</label>
     <br>
@@ -18,9 +18,10 @@
     <br>
     <label for="inputComentario">Comentários</label>
     <br>
-    <textarea name="comentario" rows="8" cols="50%"></textarea>
+    <textarea name="comentario" class="form-control" rows="5"></textarea>
   </form>
-  
+
 </div>
+<p> <br> </p>
 
 {% endblock %}
