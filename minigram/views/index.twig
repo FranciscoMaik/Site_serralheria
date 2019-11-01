@@ -3,7 +3,21 @@
 {% block body %}
 <div class="card-body">
   <h1>Home</h1>
-  <p>Este documento é o primeiro com NodeJS</p>
+  <p> <a href="cadastrarNoticia">Cadastrar Noticia</a> </p>
+  <p> <a href="cadastrarDiretoria">Cadastrar Diretoria</a> </p>
+  <br>
+
+</div>
+
+<div class="card-body">
+  {% for pub in noticia %}
+  <div id='mostrarNoticias'>
+    <h3> <span>{{pub.titulo}}</span> </h3>
+    <label for="">{{pub.corpo}}</label>
+    <br><br>
+  </div>
+
+  {% endfor %}
 </div>
 
 {% endblock %}

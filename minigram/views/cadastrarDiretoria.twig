@@ -1,0 +1,20 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<div class="card-body">
+  <h1>Cadastrar Diretoria</h1>
+  <p></p>
+  <form class="form-group" action="cadastrarDiretoria" method="post">
+    <label for="labelNomeDiretoria">Nome da Diretoria</label>
+    <br>
+    <input type="text" name="tituloDiretoria" value="" placeholder="Diretoria">
+    <br>
+    <label for="labelCorpodaDiretoria">Explicação sobre a Diretoria</label>
+    <br>
+    <textarea name="explicacaoDiretoria"  class="form-control" rows="8"></textarea>
+    <br><br>
+    <button type="submit" name="submeterDiretoria" class="btn btn-primary btn-lg">Submeter</button>
+  </form>
+</div>
+
+{% endblock %}

@@ -4,7 +4,17 @@
 
   <div class="card-body">
     <h1>Diretorias</h1>
-    <p>Estas são as diretorias</p>
+    <div class="card-body">
+      {% for pub in diretorias %}
+      <div id='mostrarNoticias'>
+        <h3> <span>{{pub.diretoria}}</span> </h3>
+        <label for="">{{pub.descricao}}</label>
+        <p id="vazio"> <br> <br> </p>
+        <br><br>
+      </div>
+
+      {% endfor %}
+    </div>
   </div>
 
 {% endblock %}

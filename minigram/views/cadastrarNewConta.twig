@@ -1,0 +1,31 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<p></p>
+  <nav id="telaLogin">
+    <h1>Nova Conta</h1>
+    <form class="form-group" action="/cadastrarNewConta" method="post">
+      <label for="emailImput">Email</label>
+      <br>
+      <input type="email" class="form-control" name="useradm" value="" placeholder="Email" id="emailEntrada">
+      <br>
+      <label for="passwordInput">Senha</label>
+      <br>
+      <input type="password" class="form-control" name="password" value="" placeholder="Password" id="senhaCadastrada">
+      <br>
+      <label for="confirmacaoJua">Senha de Confirmação da JUÁ</label>
+      <br>
+      <input type="password" class="form-control" name="confirmacaoJuaInput" placeholder="Confirmação" value="">
+      <br>
+      <button type="submit" id="btn_enviar" class="btn btn-lg btn-block btn-primary" id="autenticarEmail" name="criarEmail">Criar Conta</button>
+      <p class="text-center"> <br> <a href="login">Voltar</a>
+      </p>
+
+    </form>
+
+    <p></p>
+
+  </nav>
+  <p> <br> </p>
+
+{% endblock %}

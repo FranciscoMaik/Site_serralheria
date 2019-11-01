@@ -3,25 +3,39 @@
 {% block body %}
 <p></p>
 <div id="telaFaleConosco">
-  <form class="form-group" action="index.html" method="post">
+  <form class="form-group" action="/faleConosco" method="post">
     <h2 class="text-center">Fale Conosco</h2>
     <br>
     <label for="labelDuvida"> <b>Duvidas</b> </label>
     <br>
     <label for="inputNick">Nickname</label>
     <br>
-    <input type="text" name="nickname">
+    <input type="text" name="nickname" placeholder="Nickname">
     <br>
     <label for="emailFaleconosco">Email</label>
     <br>
-    <input type="email" name="email">
+    <input type="email" name="email" placeholder="Email">
     <br>
     <label for="inputComentario">Comentários</label>
     <br>
     <textarea name="comentario" class="form-control" rows="5"></textarea>
+    <br>
+    <button type="submit" class=" btn btn-lg btn-primary">Enviar</button>
   </form>
 
 </div>
+<p> <br> </p>
+
+<div id="mostrarNoticias" class="card-body">
+  {% for pub in reclamacoes %}
+  <div id='mostrarNoticias'>
+    <h3> <span>{{pub.nickname}}</span> </h3>
+    <label for="">{{pub.comentario}}</label>
+    <br><br>
+  </div>
+  {% endfor %}
+</div>
+
 <p> <br> </p>
 
 {% endblock %}

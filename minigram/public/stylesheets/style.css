@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #FDD10E;
 }
 
 html{
@@ -40,7 +40,7 @@ html{
 }
 
 #menu ul li a:link{
-  color: #00B7FF;
+  color: #FDD10E;
 }
 
 #menu ul li a:visited{
@@ -101,4 +101,19 @@ footer a{
 
 textarea{
   width: 80%;
+}
+
+#mostrarNoticias{
+  border-radius: 2px;
+  background-color: #f8f8ff;
+}
+
+#mostrarNoticias h3{
+  margin-left: 8px;
+}
+#mostrarNoticias label{
+  margin-left: 8px;
+}
+#vazio{
+background-color: #fffafa;
 }
